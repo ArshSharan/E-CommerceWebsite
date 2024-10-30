@@ -47,8 +47,8 @@
     right: 1rem;
   }
 
-  .cart-total h3 {
-    color: #b8860b;
+  .cart-total h2 {
+    color: #000000;
   }
 
 .item-controls button {
@@ -63,4 +63,30 @@
   border-radius: 4px; 
   cursor: pointer; 
   margin: 0px 5px; 
+}
+
+.checkout {
+  --bg: #000;
+  --hover-bg: #b8860b;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: medium;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.9em 10em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.checkout:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.checkout:active {
+  transform: translate(0);
+  box-shadow: none;
 }

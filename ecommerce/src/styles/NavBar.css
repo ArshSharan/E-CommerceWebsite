@@ -1,19 +1,29 @@
 .navbar {
   display: flex;
+  font-family:'Times New Roman', Times, serif;
   justify-content: space-between;
   padding: 1rem;
   background-color: #3b3b3b;
   color: #b8860b;
-  position: fixed; /* Keep navbar fixed at the top */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  padding: 1rem; /* Padding around the navbar */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  z-index: 1000; /* Make sure it stays above other content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
 }
-
-.navbar-logo, .nav-button {
+.nav-button {
+  font-family:'Times New Roman', Times, serif;
+  background-color: #b8860b;
+  font-size: 18px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+} 
+.navbar-logo{
+  font-family:'Times New Roman', Times, serif;
   color: #fff;
   font-size: 1.2rem;
   background: none;
@@ -24,12 +34,14 @@
 }
 
 .navbar-links {
+  font-family:'Times New Roman', Times, serif;
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
 .cart-button {
+  font-family:'Times New Roman', Times, serif;
   background-color: #b8860b;
   font-size: 18px;
   color: #fff;
@@ -39,6 +51,7 @@
 }
 
 .cart-button, .nav-button {
+  font-family:'Times New Roman', Times, serif;
   color: #fff;
 }
 

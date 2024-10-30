@@ -9,7 +9,7 @@ function NavBar({ toggleCart, cartItemCount }) {
 
   return (
     <nav className="navbar">
-      <button className="navbar-logo" onClick={() => navigate('/')}>FakeStore</button>
+      <button className="navbar-logo" onClick={() => navigate('/')}>E-Commerce Website</button>
       <div className="navbar-links">
         <button onClick={goToProducts} className="nav-button">Products</button>
         <button className="cart-button" onClick={toggleCart}>

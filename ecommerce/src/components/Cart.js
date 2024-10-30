@@ -30,7 +30,10 @@ function Cart({ cartItems, addToCart, removeFromCart, closeCart }) {
           </ul>
         )}
         <div className="cart-total">
-          <h3>Total: ${totalAmount.toFixed(2)}</h3>
+          <h2>Total: ${totalAmount.toFixed(2)}</h2>
+        </div>
+        <div className="checkout">
+            Pay Now
         </div>
       </div>
     </div>
