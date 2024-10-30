@@ -8,8 +8,14 @@ function ProductCard({ product, addToCart }) {
       <img src={product.image} alt={product.title} />
       <h3>{product.title}</h3>
       <p>${product.price}</p>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
-      <Link to={`/products/${product.id}`}>View Details</Link>
+      <div style={{ display: 'flex'}}>
+        <button onClick={() => addToCart(product)} style={{marginRight: '20px' }}>Add to Cart</button>
+        <div className="viewDetails">
+          <Link to={`/products/${product.id}`}>
+            <button>View Details</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -8,6 +8,9 @@ import Cart from './components/Cart';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => setIsCartOpen(!isCartOpen);
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
@@ -32,14 +35,21 @@ function App() {
 
   return (
     <Router>
-      <NavBar />
+      <NavBar toggleCart={toggleCart} cartItemCount={cartItems.reduce((count, item) => count + item.quantity, 0)} />
       <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductList addToCart={addToCart} />} />
           <Route path="/products/:id" element={<ProductDetail addToCart={addToCart} />} />
         </Routes>
-        <Cart cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart} />
+        {isCartOpen && (
+          <Cart 
+            cartItems={cartItems} 
+            addToCart={addToCart} 
+            removeFromCart={removeFromCart} 
+            closeCart={toggleCart}
+          />
+        )}
       </div>
     </Router>
   );

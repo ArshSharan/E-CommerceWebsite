@@ -1,6 +1,7 @@
 .product-detail {
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
+    background-color: #faedcd;
   }
   
   .product-detail img {
@@ -18,3 +19,17 @@
     color: #666;
   }
   
+  .product-detail button {
+    background-color: #b8860b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-detail button:hover {
+    background-color: #d4af37; /* Button hover effect */
+  }

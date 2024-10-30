@@ -1,12 +1,48 @@
 .navbar {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .navbar a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #3b3b3b;
+  color: #b8860b;
+  position: fixed; /* Keep navbar fixed at the top */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  padding: 1rem; /* Padding around the navbar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Make sure it stays above other content */
+}
+
+.navbar-logo, .nav-button {
+  color: #fff;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart-button {
+  background-color: #b8860b;
+  font-size: 18px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button, .nav-button {
+  color: #fff;
+}
+
+.cart-button:hover, .nav-button:hover {
+  background-color: #d4af37;
+}
+

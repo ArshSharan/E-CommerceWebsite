@@ -1,12 +1,16 @@
+
 .product-card {
-    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dddddd;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
   }
   
   .product-card img {
-    max-width: 100px;
+    max-width: 140px;
     height: auto;
   }
   
@@ -14,4 +18,8 @@
     font-size: 1.2rem;
     color: #333;
   }
-  
+
+.BothButtons {
+  display:flex;
+  align-items: end;
+}

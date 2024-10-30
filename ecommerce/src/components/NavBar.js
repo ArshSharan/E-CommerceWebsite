@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../styles/NavBar.css';
 
 function NavBar({ toggleCart, cartItemCount }) {
+  const navigate = useNavigate();
+
+  const goToProducts = () => navigate('/products');
+
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-logo">FakeStore</Link>
+      <button className="navbar-logo" onClick={() => navigate('/')}>FakeStore</button>
       <div className="navbar-links">
-        <Link to="/products">Products</Link>
+        <button onClick={goToProducts} className="nav-button">Products</button>
         <button className="cart-button" onClick={toggleCart}>
           Cart ({cartItemCount})
         </button>

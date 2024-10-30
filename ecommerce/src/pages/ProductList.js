@@ -3,6 +3,7 @@ import { fetchProducts } from '../api/fakestore';
 import ProductCard from '../components/ProductCard';
 import '../styles/ProductList.css';
 
+
 function ProductList({ addToCart }) {
   const [products, setProducts] = useState([]);
 
