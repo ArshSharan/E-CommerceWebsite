@@ -1,35 +1,110 @@
-.product-detail {
-    padding: 4rem;
-    text-align: center;
-    background-color: #faedcd;
+.product-detail-wrapper {
+  background-color: #faedcd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-image-wrapper {
+  flex: 1;
+  background-color: #f6f2e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #b8860b;
+  margin-bottom: 2rem;
+}
+
+.add-to-cart,
+.back-button {
+  background-color: #b8860b;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart:hover,
+.back-button:hover {
+  background-color: #d4af37;
+}
+
+.back-button {
+  background-color: #3b3b3b;
+}
+
+.back-button:hover {
+  background-color: #2c2c2c;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #b8860b;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
   }
-  
-  .product-detail img {
-    max-width: 300px;
-    height: auto;
+
+  .product-info {
+    padding: 2rem;
   }
-  
-  .product-detail h1 {
-    font-size: 2rem;
-    color: #333;
+
+  .product-image-wrapper {
+    padding: 1.5rem;
   }
-  
-  .product-detail p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .product-detail button {
-    background-color: #b8860b;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .product-detail button:hover {
-    background-color: #d4af37; /* Button hover effect */
-  }
+}

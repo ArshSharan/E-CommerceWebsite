@@ -1,14 +1,18 @@
-import React from 'react';
-import '../styles/Home.css';
+import React from "react";
+import "../styles/Home.css";
 
 function Home() {
   return (
-    <body>
     <div className="home">
-      <h1>Welcome to the FakeStore E-commerce</h1>
-      <p>Browse our exclusive collection of products.</p>
+      <div className="hero">
+        <div className="overlay"></div>
+        <div className="hero-content">
+          <h1>Welcome to Arsh's Website</h1>
+          <p>Discover the finest collection of premium products.</p>
+          <a href="/products" className="shop-btn">Start Shopping</a>
+        </div>
+      </div>
     </div>
-    </body>
   );
 }
 

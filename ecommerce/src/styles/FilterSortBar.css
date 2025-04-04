@@ -1,0 +1,53 @@
+.filter-sort-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(135deg, #fcf5e5, #fff8db);
+    padding: 1rem 2.5rem;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 90%;
+    flex-wrap: wrap;
+  }
+  
+  .filter-sort-bar label {
+    font-weight: 600;
+    color: #4a3f2f;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-sort-bar select {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #e6d8b4;
+    background-color: #fffaf0;
+    color: #4a3f2f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .filter-sort-bar select:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .filter-sort-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1.5rem;
+    }
+  
+    .filter-sort-bar label {
+      justify-content: space-between;
+    }
+  }
+  

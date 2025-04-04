@@ -1,0 +1,103 @@
+.checkout-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #fff8e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .checkout-container h2 {
+    font-size: 2rem;
+    color: #b8860b;
+    margin-bottom: 1rem;
+  }
+  
+  .checkout-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .checkout-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .checkout-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .checkout-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;  /* Ensures the background remains white */
+    margin-right: 1rem;
+  }
+  
+  .checkout-item-details {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .checkout-item-details h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .checkout-item-details p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 2px 0;
+  }
+  
+  .checkout-total {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b8860b;
+  }
+  
+  .pay-now-btn {
+    background-color: #b8860b;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .pay-now-btn:hover {
+    background-color: #d4af37;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .checkout-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .checkout-item-image {
+      margin-bottom: 1rem;
+    }
+  
+    .checkout-container {
+      padding: 1.5rem;
+    }
+  }
+  

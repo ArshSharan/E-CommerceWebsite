@@ -1,27 +1,75 @@
-.home {
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../pages/cinematic-style-mall.jpg') no-repeat center center/cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   text-align: center;
-  background-color: antiquewhite;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-body {
-  background-color: antiquewhite;
-  margin: 0;
-  height: 100vh;
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
 }
 
-.home h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.home p {
-  font-size: 1.2rem;
-  color: #555;
+.hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 600px;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
 }
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.shop-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 15px;
+  background-color: #ff9d00;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  background-color: #e68a00;
+  transform: scale(1.05);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
